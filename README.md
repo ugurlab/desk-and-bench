@@ -15,6 +15,7 @@ Her uygulama ayrı depoda geliştirilir. Bu depo İngilizce/Türkçe araç katal
 ## Adding a tool
 Create a separate repository, publish its Pages site, and add use/download links and a description to index.html and tr.html.
 New app versions are maintained in the app repository without changing this catalogue.
-task-board.html is only a compatibility redirect for the original application URL.
+task-board.html is a retired-address notice, with no automatic redirect. Task Board is distributed as a ZIP download.
 
 No analytics or advertising scripts have been added.
+
