@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ugurlab.github.io/desk-and-bench/sitemap.xml
