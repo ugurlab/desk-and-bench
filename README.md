@@ -1,22 +1,20 @@
 # Desk & Bench
 Simple tools for work and science. / Çalışma ve bilim için pratik araçlar.
 
-Website: https://ugurlab.github.io/desk-and-bench/
-Türkçe: https://ugurlab.github.io/desk-and-bench/tr.html
+This repository contains the bilingual catalogue website, not application source code.
+Her uygulama ayrı depoda geliştirilir. Bu depo İngilizce/Türkçe araç kataloğudur.
 
-## Task Board / Görev Panosu
-Open task-board.html in your browser, or download the single HTML file and open it offline.
-Tasks are stored in this browser only. No account, cloud service or cross-device sync.
-Use the menu to export a JSON backup regularly. Browser data removal can erase tasks.
-The tool includes English and Turkish; change the language in the menu.
+- Website: https://ugurlab.github.io/desk-and-bench/
+- Türkçe: https://ugurlab.github.io/desk-and-bench/tr.html
 
-Görevler yalnızca kullanılan tarayıcıda saklanır. Cihazlar arası eşitleme yoktur.
-Menüden düzenli JSON yedeği indirin. Tarayıcı verilerini silmek görevleri silebilir.
+## Applications / Uygulamalar
+| Tool | Use | Source and issues |
+| --- | --- | --- |
+| Task Board / Görev Panosu | https://ugurlab.github.io/task-board/ | https://github.com/ugurlab/task-board |
 
-## Feedback
-Use this repository's Issues tab for suggestions and bugs.
-No analytics or advertising scripts have been added. GitHub Pages handles ordinary hosting requests.
+## Adding a tool
+Create a separate repository, publish its Pages site, and add use/download links and a description to index.html and tr.html.
+New app versions are maintained in the app repository without changing this catalogue.
+task-board.html is only a compatibility redirect for the original application URL.
 
-## Third-party code
-Task Board includes SortableJS 1.15.2, distributed under the MIT license.
-The bundled library retains its attribution. No license for original project code has been selected yet.
+No analytics or advertising scripts have been added.
