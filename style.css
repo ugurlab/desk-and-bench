@@ -75,11 +75,11 @@ p{margin:0 0 1em}
 .btn svg{width:18px;height:18px;flex:0 0 auto}
 .fineprint{font-size:14px;color:var(--muted);margin:16px 0 0;max-width:40ch}
 
-/* the screenshot bleeds off the right edge on wide screens */
-.shot{margin:0;margin-right:calc(-1 * var(--gutter) - max(0px, (100vw - var(--wrap)) / 2))}
+/* screenshot sits within the page width */
+.shot{margin:0}
 .shot-frame{
-  background:#f4f2ee;border:1px solid var(--line);border-right:none;
-  border-radius:14px 0 0 14px;overflow:hidden;
+  background:#f4f2ee;border:1px solid var(--line);
+  border-radius:14px;overflow:hidden;
   box-shadow:0 30px 60px -30px rgba(21,35,42,.35),0 8px 18px -10px rgba(21,35,42,.2);
 }
 .shot figcaption{font-size:13px;color:var(--muted);margin-top:10px}
@@ -150,7 +150,6 @@ p{margin:0 0 1em}
   .hero-side{display:block}
   .hero-side .lead{margin-bottom:22px}
   .hero .lead{max-width:44ch}
-  .shot{margin-right:calc(-1 * var(--gutter))}
   .steps{grid-template-columns:1fr 1fr;row-gap:24px}
   .steps li:nth-child(3){padding-left:0;border-left:none}
   .two{grid-template-columns:1fr}
