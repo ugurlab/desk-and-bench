@@ -50,18 +50,19 @@ p{margin:0 0 1em}
   border-top:1px solid var(--line);border-bottom:1px solid var(--line);
   overflow:hidden;
 }
-.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);row-gap:clamp(24px,3vw,36px);align-items:end;padding-top:clamp(44px,6vw,84px);padding-bottom:clamp(40px,5vw,72px)}
-.hero-text{grid-column:1 / -1}
-.hero-side{grid-column:1 / -1;display:flex;align-items:flex-end;justify-content:space-between;gap:24px 48px;flex-wrap:wrap}
-.hero-side .lead{margin:0}
-.hero-side .cta .fineprint{margin-top:12px}
-.hero .shot{grid-column:1 / -1;margin-top:clamp(8px,2vw,20px)}
+.hero-inner{padding-top:clamp(40px,5vw,72px);padding-bottom:clamp(44px,6vw,80px)}
 .hero h1{
-  font-size:clamp(38px,5.6vw,80px);max-width:19ch;line-height:1.02;letter-spacing:-.035em;
-  font-weight:650;font-stretch:86%;margin:0;
-  text-wrap:balance;
+  font-size:clamp(32px,3.9vw,56px);line-height:1.08;letter-spacing:-.03em;
+  font-weight:650;font-stretch:88%;margin:0 0 clamp(28px,4vw,48px);
+  max-width:24ch;text-wrap:balance;
 }
-.hero .lead{font-size:clamp(18px,1.5vw,20px);color:var(--muted);max-width:40ch;margin-bottom:24px}
+.hero .lead{font-size:clamp(18px,1.5vw,20px);color:var(--muted);max-width:52ch;margin:0 0 26px}
+.hero .back{display:inline-block;font-size:15px;color:var(--muted);text-decoration:none;margin-bottom:18px}
+.hero .back:hover{color:var(--ink);text-decoration:underline}
+.tool-hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px 48px;align-items:end;margin-bottom:clamp(28px,4vw,44px)}
+.tool-hero h1{margin-bottom:14px}
+.tool-hero .lead{margin:0}
+.tool-hero .cta .fineprint{margin-top:12px}
 .actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 .btn{
   display:inline-flex;align-items:center;gap:8px;
@@ -93,7 +94,8 @@ p{margin:0 0 1em}
 
 /* ---------- shelves ---------- */
 .shelves{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:2px solid var(--ink)}
-.shelf{padding:26px 0 0}
+.shelf{padding:26px 0 0;display:flex;flex-direction:column}
+.shelf > .tool,.shelf > .slot{flex:1}
 .shelf + .shelf{border-left:1px solid var(--line);padding-left:clamp(20px,3vw,40px)}
 .shelf:first-child{padding-right:clamp(20px,3vw,40px)}
 .shelf-name{font-size:26px;font-weight:650;letter-spacing:-.02em;margin:0}
@@ -104,6 +106,11 @@ p{margin:0 0 1em}
 .version{font-size:13px;color:var(--muted);white-space:nowrap}
 .tool p{color:var(--muted);margin:8px 0 18px;max-width:46ch}
 .tool .actions .btn{padding:10px 16px;font-size:15px}
+.tool{display:flex;flex-direction:column}
+.thumb{display:block;margin:-22px -22px 20px;border-bottom:1px solid var(--line);border-radius:13px 13px 0 0;overflow:hidden;background:#f4f2ee;aspect-ratio:16 / 7}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:left top}
+.tool-body{display:flex;flex-direction:column;flex:1}
+.tool-body .actions{margin-top:auto}
 .slot{
   border:1.5px dashed var(--line);border-radius:14px;padding:22px;
   color:var(--muted);min-height:168px;display:flex;flex-direction:column;justify-content:center;gap:6px;
@@ -137,6 +144,10 @@ p{margin:0 0 1em}
 .faq summary::after{content:"+";font-weight:400;font-size:24px;line-height:1;color:var(--muted);transition:transform .2s}
 .faq details[open] summary::after{transform:rotate(45deg)}
 .faq details p{color:var(--muted);margin:10px 0 0;max-width:62ch}
+.principles{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.principles li{display:grid;grid-template-columns:minmax(120px,1fr) 2fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.principles strong{font-size:18px}
+.principles span{color:var(--muted)}
 .about{background:var(--ink);color:#e6ecea;border-radius:16px;padding:clamp(24px,3vw,34px)}
 .about h2{color:#fff;font-size:24px;margin:0 0 10px;letter-spacing:-.015em}
 .about p{color:#b8c6c2}
@@ -147,8 +158,7 @@ p{margin:0 0 1em}
 
 /* ---------- responsive ---------- */
 @media (max-width:900px){
-  .hero-side{display:block}
-  .hero-side .lead{margin-bottom:22px}
+  .tool-hero{grid-template-columns:1fr}
   .hero .lead{max-width:44ch}
   .steps{grid-template-columns:1fr 1fr;row-gap:24px}
   .steps li:nth-child(3){padding-left:0;border-left:none}
@@ -159,6 +169,7 @@ p{margin:0 0 1em}
   .shot-frame{overflow-x:hidden}
   .shot-frame img{width:760px;max-width:none}
   .shelves{grid-template-columns:1fr}
+  .principles li{grid-template-columns:1fr;gap:2px}
   .shelf:first-child{padding-right:0}
   .shelf + .shelf{border-left:none;padding-left:0;margin-top:34px;border-top:1px solid var(--line)}
   .steps{grid-template-columns:1fr}

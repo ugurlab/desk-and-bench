@@ -11,7 +11,8 @@ Bu dosya, siteyi düzenleyen herkes (Uğur, Claude, ChatGPT) için ortak kurald�
 
 - Uğur Çömlekcioğlu'nun kendi işi için geliştirdiği küçük araçların **kataloğu**.
 - İki raf var: **Masa** (üretkenlik, masa başı işler) ve **Tezgâh** (laboratuvar araçları).
-- Her araç **kendi deposunda** geliştirilir (örn. `ugurlab/task-board`). Bu depo sadece tanıtım ve indirme sayfasıdır; uygulama kodu buraya konmaz.
+- Her araç **kendi deposunda** geliştirilir (örn. `ugurlab/task-board`). Bu depo sadece katalogdur; uygulama kodu buraya konmaz.
+- Her aracın **kendi tanıtım sayfası** kendi deposundadır (`ugurlab/<araç>/index.html` İngilizce, `tr.html` Türkçe) ve bu deponun stil dosyasını kullanır: `<link rel="stylesheet" href="/desk-and-bench/style.css">`. Böylece bütün sayfalar aynı tasarımda kalır.
 - Adres: https://ugurlab.github.io/desk-and-bench/ (İngilizce) ve `/tr.html` (Türkçe).
 
 ## 2. Dosyalar
@@ -20,8 +21,7 @@ Bu dosya, siteyi düzenleyen herkes (Uğur, Claude, ChatGPT) için ortak kurald�
 | --- | --- |
 | `index.html` | İngilizce sayfa (varsayılan dil) |
 | `tr.html` | Türkçe sayfa. **index.html ile aynı yapıda** olmalı |
-| `style.css` | İki sayfanın ortak ve tek stil dosyası |
-| `assets/` | Görseller (WebP). Her araç görseli için `-tr` ve `-en` sürümü, ayrıca 1200 px genişlikte küçük sürümü |
+| `style.css` | Katalog ve **bütün araç sayfalarının** ortak tek stil dosyası. Değişiklik araç sayfalarını da etkiler; onları da kontrol et |
 | `task-board.html` | Eski adres için bilgi sayfası, dokunma |
 | `sitemap.xml`, `robots.txt` | Arama motorları için; yeni sayfa eklenirse sitemap güncellenir |
 
@@ -53,13 +53,14 @@ Bu dosya, siteyi düzenleyen herkes (Uğur, Claude, ChatGPT) için ortak kurald�
 
 - İçerik en fazla **1180 px** genişlikte ve **ortalanmış** (`.wrap`). Kenar boşluğu `--gutter`.
 - **Simetri kuralı:** Hiçbir öğe (görsel dahil) sayfa genişliğinden dışarı taşmaz; sol ve sağ boşluk eşittir. (Uğur, taşan görseli simetriyi bozduğu için istemedi.)
-- Sayfa sırası:
-  1. Üst çubuk: marka, menü (Araçlar, Görev Panosu, Hakkında), dil düğmesi
-  2. Giriş: büyük başlık, kısa açıklama + indirme düğmeleri, altında aracın **gerçek ekran görüntüsü** (kareli defter zemini üzerinde)
-  3. Araçlar: iki raf, **Masa** ve **Tezgâh**
-  4. Öne çıkan aracın özellikleri ve numaralı kullanım adımları
-  5. Sık sorulanlar (açılır kapanır) ve yanında koyu "Hakkında" kutusu
-  6. Alt bilgi
+- **Ana sayfa (katalog) sırası** — yalın tutulur, araç ayrıntısı içermez:
+  1. Üst çubuk: marka, menü (Araçlar, Hakkında), dil düğmesi
+  2. Kareli defter zemini üzerinde **iki satırlık** başlık; hemen altında araç rafları **Masa** ve **Tezgâh**. Her araç kartında küçük önizleme görseli, ad, sürüm, bir-iki cümle, "ZIP indir" ve "Ayrıntılar"
+  3. "Bu araçlar hakkında" (ücretsiz, kurulum yok, takip yok) ve yanında koyu "Hakkında" kutusu
+  4. Alt bilgi
+- Başlığın altına açıklama paragrafı konmaz (Uğur istemedi).
+- **Araç sayfası sırası** (örn. Görev Panosu): üst çubuk (Özellikler, Kullanım, Sorular, dil) → "Desk & Bench araçlarına dön" bağlantısı, araç adı, kısa açıklama, indirme düğmesi → büyük gerçek ekran görüntüsü → "neler yapar" ve numaralı kullanım adımları → o araca ait sık sorulanlar ve yanında geri bildirim kutusu → alt bilgi.
+- Sık sorulan sorular araca aitse araç sayfasında durur, ana sayfada değil.
 - Numara sadece gerçek sıralı içerikte kullanılır (kullanım adımları gibi).
 - Dekoratif animasyon yok. Sadece kullanıcı eylemine yanıt veren küçük geçişler (düğme üzerine gelme, SSS açılması).
 
@@ -75,25 +76,28 @@ Bu dosya, siteyi düzenleyen herkes (Uğur, Claude, ChatGPT) için ortak kurald�
 
 - Ekran görüntüleri **örnek verilerle** alınır; gerçek kişisel görev, isim, e-posta içermez.
 - Biçim WebP. Büyük sürüm 2000 px, küçük sürüm 1200 px genişlik. `width`/`height` ve açıklayıcı `alt` metni zorunlu.
+- Görseller **aracın kendi deposunda** `assets/` klasöründe durur (örn. `ugurlab/task-board/assets/board-tr.webp`). Katalog kartı küçük sürümü `/task-board/assets/...` yoluyla kullanır.
 - Türkçe sayfada Türkçe arayüzlü görsel, İngilizce sayfada İngilizce arayüzlü görsel.
 
 ## 8. Yeni araç ekleme
 
 1. Aracı kendi deposunda yayınla (`ugurlab/<araç-adı>`), GitHub Pages ve ZIP indirme bağlantısı hazır olsun.
-2. `index.html` ve `tr.html` içinde doğru rafa (Masa veya Tezgâh) bir `<article class="tool">` ekle: ad, sürüm, bir-iki cümle açıklama, "ZIP indir" ve "Ayrıntılar" düğmeleri.
-3. Tezgâh'a ilk laboratuvar aracı eklenince "İlk laboratuvar aracı hazırlanıyor" kutusunu (`.slot`) kaldır.
-4. Gerekirse `assets/` içine örnek verili ekran görüntülerini koy.
+2. Aracın deposunda Görev Panosu sayfasını örnek alarak `index.html` ve `tr.html` tanıtım sayfalarını yap (ortak `style.css`'i kullan).
+3. Katalogda `index.html` ve `tr.html` içinde doğru rafa (Masa veya Tezgâh) bir `<article class="tool">` ekle: önizleme görseli, ad, sürüm, bir-iki cümle açıklama, "ZIP indir" ve "Ayrıntılar" (Türkçe katalogdan `tr.html`'e, İngilizceden `index.html`'e) düğmeleri.
+4. Tezgâh'a ilk laboratuvar aracı eklenince "İlk laboratuvar aracı hazırlanıyor" kutusunu (`.slot`) kaldır.
 5. README'deki araç tablosunu güncelle.
 
 ## 9. Çalışma düzeni (birden fazla yardımcı için)
 
 - **Bir iş, bir yardımcı:** Aynı anda iki yardımcı aynı dosyada çalışmaz.
 - **Başlamadan önce en son hali al:** `git pull` (veya GitHub'daki son sürümü kontrol et). Başkasının değişikliğini geri alma.
-- **Büyük değişiklikler** (tasarım, yeni bölüm) ayrı dalda ve birleştirme isteğiyle (pull request) yapılır; Uğur onaylayınca birleşir. **Küçük düzeltmeler** doğrudan `main`'e gidebilir.
+- **Büyük değişiklikler** (tasarım, yeni bölüm) ayrı dalda ve birleştirme isteğiyle (pull request) yapılır; Uğur onaylayınca birleşir. **Küçük düzeltmeler** ve **Uğur'un açıkça tarif ettiği değişiklikler** doğrudan `main`'e gidebilir.
+- İki depoyu birlikte etkileyen değişikliklerde önce aracın deposunu (görseller), sonra katalogu gönder.
 - Kayıt mesajı neyin neden değiştiğini kısaca söyler.
 - Göndermeden önce kontrol: 390 px (telefon), 1024 px (tablet) ve 1440 px+ (masaüstü) genişlikte yatay kaydırma olmamalı; iki dil sayfası da açılmalı; bağlantılar çalışmalı.
 - Analitik, reklam veya takip kodu **eklenmez**.
 
 ## 10. Değişiklik günlüğü
 
+- 2026-11-05 (2): Ana sayfa yalınlaştırıldı: başlık iki satır, açıklama paragrafı kaldırıldı, raflar başlığın hemen altında, araç kartına önizleme görseli. Görev Panosu ayrıntıları, büyük görsel ve sık sorulanlar `ugurlab/task-board` sayfasına taşındı.
 - 2026-11-05: Yeni tasarım (tezgâh paleti, Instrument Sans, gerçek ekran görüntülü giriş, Masa/Tezgâh rafları). Giriş görseli simetri için sayfa genişliğine sığdırıldı. Bu dosya eklendi.

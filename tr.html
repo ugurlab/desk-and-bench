@@ -13,7 +13,7 @@
 <meta property="og:description" content="Ücretsiz üretkenlik ve laboratuvar araçları. Görev Panosu’nu indir, kendi bilgisayarında hesap açmadan ve internetsiz kullan.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ugurlab.github.io/desk-and-bench/tr.html">
-<meta property="og:image" content="https://ugurlab.github.io/desk-and-bench/assets/board-tr-1200.webp">
+<meta property="og:image" content="https://ugurlab.github.io/task-board/assets/board-tr-1200.webp">
 <meta name="theme-color" content="#e8edea">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,68 +26,41 @@
   <a class="brand" href="tr.html">Desk<span class="amp">&amp;</span>Bench</a>
   <nav class="site-nav" aria-label="Ana menü">
     <a class="hide-sm" href="#tools">Araçlar</a>
-    <a class="hide-sm" href="#task-board">Görev Panosu</a>
     <a class="hide-sm" href="#about">Hakkında</a>
     <a class="lang" href="index.html" lang="en" hreflang="en">English</a>
   </nav>
 </header>
 <main id="main">
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div class="hero-text">
-      <h1>Masadan laboratuvar tezgâhına, işini kolaylaştıran küçük araçlar.</h1>
-    </div>
-    <div class="hero-side">
-      <p class="lead">Kendi çalışmam için geliştirdiğim araçları burada ücretsiz paylaşıyorum. İlki, görevlerini tek bakışta görmeni sağlayan Görev Panosu.</p>
-      <div class="cta">
-      <div class="actions">
-        <a class="btn primary" href="../task-board/task-board.zip" download="desk-and-bench-task-board.zip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>Görev Panosu’nu indir</a>
-        <a class="btn" href="#task-board">Nasıl çalışır?</a>
+<section class="hero" id="tools" aria-labelledby="h1">
+  <div class="wrap hero-inner">
+    <h1 id="h1">Masadan laboratuvar tezgâhına, işini kolaylaştıran küçük araçlar.</h1>
+    <div class="shelves">
+      <div class="shelf">
+        <h2 class="shelf-name">Masa</h2><p class="shelf-what">Planlama ve günlük iş</p>
+        <article class="tool">
+          <a class="thumb" href="/task-board/tr.html" tabindex="-1" aria-hidden="true"><img src="/task-board/assets/board-tr-1200.webp" width="1200" height="448" alt="" loading="lazy"></a>
+          <div class="tool-body">
+            <div class="tool-top"><h3><a href="/task-board/tr.html" style="text-decoration:none">Görev Panosu</a></h3><span class="version">Sürüm 1.0</span></div>
+            <p>İşlerini bölmelere ayır, son tarihleri takip et, günün odağını seç. Biten bölmeyi arşive kaldır.</p>
+            <div class="actions">
+              <a class="btn primary" href="/task-board/task-board.zip" download="desk-and-bench-task-board.zip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>ZIP indir</a>
+              <a class="btn" href="/task-board/tr.html">Ayrıntılar</a>
+            </div>
+          </div>
+        </article>
       </div>
-      <p class="fineprint">Tek bir HTML dosyası. Hesap, kurulum ve internet gerekmez.</p>
+      <div class="shelf">
+        <h2 class="shelf-name">Tezgâh</h2><p class="shelf-what">Laboratuvar işleri</p>
+        <div class="slot"><strong>İlk laboratuvar aracı hazırlanıyor</strong><p>Hazır olduğunda bu rafta yer alacak.</p></div>
       </div>
-    </div>
-    <figure class="shot">
-      <div class="shot-frame"><img src="assets/board-tr.webp" srcset="assets/board-tr-1200.webp 1200w, assets/board-tr.webp 2000w" sizes="100vw" width="2000" height="746" alt="Görev Panosu: renkli bölmelerde görevler, üstte bugünün odağı, sağda şeride dönüşmüş bölmeler." fetchpriority="high"></div>
-      <figcaption>Örnek verilerle Görev Panosu.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section class="section wrap" id="tools" aria-labelledby="tools-h">
-  <div class="section-head"><h2 id="tools-h">Araçlar</h2><p>Araçlar iki rafta duruyor: masa başı işler için olanlar ve laboratuvar için olanlar.</p></div>
-  <div class="shelves">
-    <div class="shelf">
-      <h3 class="shelf-name">Masa</h3><p class="shelf-what">Planlama ve günlük iş</p>
-      <article class="tool">
-        <div class="tool-top"><h3>Görev Panosu</h3><span class="version">Sürüm 1.0</span></div>
-        <p>İşlerini bölmelere ayır, son tarihleri takip et, günün odağını seç. Biten bölmeyi arşive kaldır.</p>
-        <div class="actions">
-          <a class="btn primary" href="../task-board/task-board.zip" download="desk-and-bench-task-board.zip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>ZIP indir</a>
-          <a class="btn" href="../task-board/">Ayrıntılar</a>
-        </div>
-      </article>
-    </div>
-    <div class="shelf">
-      <h3 class="shelf-name">Tezgâh</h3><p class="shelf-what">Laboratuvar işleri</p>
-      <div class="slot"><strong>İlk laboratuvar aracı hazırlanıyor</strong><p>Hazır olduğunda bu rafta yer alacak.</p></div>
     </div>
   </div>
 </section>
-
-<div class="feature-wrap" id="task-board">
-  <section class="section wrap" aria-labelledby="feat-h">
-    <div class="section-head"><h2 id="feat-h">Görev Panosu neler yapar?</h2><p>Sade kalması için bilerek sınırlı tutuldu. Takvim ya da proje yönetim yazılımı değil; önündeki işleri görmeni ve bitirmeni kolaylaştırır.</p></div>
-    <ul class="features"><li style="--c:#4a7bd0"><h3>Renkli bölmeler</h3><p>Her proje için bir bölme aç, başlığını ve rengini seç. Görevleri sürükleyerek sırala ya da başka bölmeye taşı.</p></li><li style="--c:#2e9e8f"><h3>Bugünün odağı</h3><p>Farklı bölmelerden en fazla üç açık görevi en üste sabitle. Bitirdiklerin gün boyunca orada kalır.</p></li><li style="--c:#d9a21b"><h3>Her şey tek ekranda</h3><p>Beş bölme tam açık durur, fazlası dikey şeride döner. Aynı anda en fazla on bölme açılır; yer açmak için bitirdiğini arşive kaldırırsın.</p></li><li style="--c:#5b9a3c"><h3>İlerlemeyi görmek</h3><p>İşaretlediğin görevin üstü çizilip yeşile döner. Bölme bitince kutlanır; haftalık sayaç ve gün serisi üstte durur.</p></li></ul>
-    <h3 class="steps-title">Nasıl kullanılır?</h3>
-    <ol class="steps"><li><strong>ZIP dosyasını indir</strong><span>Yukarıdaki düğmeyle.</span></li><li><strong>Bir klasöre çıkar</strong><span>Masaüstü ya da Belgeler olabilir.</span></li><li><strong>task-board.html dosyasını aç</strong><span>Chrome, Edge veya Firefox ile.</span></li><li><strong>Ara sıra yedek al</strong><span>⋯ menüsünden “Yedeği indir”.</span></li></ol>
-  </section>
-</div>
 
 <section class="section wrap two" id="about">
-  <div class="faq" aria-labelledby="faq-h">
-    <div class="section-head"><h2 id="faq-h">Sık sorulanlar</h2></div>
-    <details><summary>Verilerim nerede saklanıyor?</summary><p>Görevler, panoyu açtığın tarayıcının yerel hafızasında durur ve hiçbir sunucuya gönderilmez. Bu yüzden başka bir bilgisayarda ya da tarayıcıda görünmez; tarayıcı verilerini silersen görevler de silinir. Düzenli JSON yedeği indir.</p></details><details><summary>Başka bir bilgisayara nasıl taşırım?</summary><p>Eski bilgisayarda ⋯ menüsünden yedeği indir, yeni bilgisayarda aynı menüden “Yedekten yükle” ile aç.</p></details><details><summary>Telefonda çalışır mı?</summary><p>Dosyayı telefonun tarayıcısında açabilirsin; dar ekranda bölmeler alt alta dizilir. Telefondaki pano bilgisayardakinden ayrıdır.</p></details><details><summary>Bu sitede takip kodu var mı?</summary><p>Hayır. Siteye analitik veya reklam kodu eklenmedi. Sayfaları GitHub Pages yayınlıyor; GitHub normal web isteklerini işler.</p></details><details><summary>Bir hata buldum ya da önerim var.</summary><p>GitHub Issues üzerinden bildirebilirsin. <a href="https://github.com/ugurlab/desk-and-bench/issues">GitHub Issues sayfasını aç</a></p></details>
+  <div aria-labelledby="pr-h">
+    <div class="section-head"><h2 id="pr-h">Bu araçlar hakkında</h2></div>
+    <ul class="principles"><li><strong>Ücretsiz</strong><span>Araçları indirip istediğin kadar kullanabilirsin.</span></li><li><strong>Kurulum yok</strong><span>İndirdiğin dosyayı tarayıcıda açman yeterli; hesap açman gerekmez.</span></li><li><strong>Takip yok</strong><span>Bu siteye analitik veya reklam kodu eklenmedi.</span></li></ul>
   </div>
   <aside class="about" aria-labelledby="about-h">
     <h2 id="about-h">Hakkında</h2>
