@@ -7,6 +7,8 @@ Her uygulama ayrı depoda geliştirilir. Bu depo İngilizce/Türkçe araç katal
 - Website: https://ugurlab.github.io/desk-and-bench/
 - Türkçe: https://ugurlab.github.io/desk-and-bench/tr.html
 
+**Before editing, read [DESIGN.md](DESIGN.md).** / **Düzenlemeden önce [DESIGN.md](DESIGN.md) dosyasını oku.**
+
 ## Applications / Uygulamalar
 | Tool | Use | Source and issues |
 | --- | --- | --- |
