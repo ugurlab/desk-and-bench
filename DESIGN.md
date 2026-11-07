@@ -99,5 +99,7 @@ Bu dosya, siteyi düzenleyen herkes (Uğur, Claude, ChatGPT) için ortak kurald�
 
 ## 10. Değişiklik günlüğü
 
+- 2026-11-07: Tezgâh rafına ilk laboratuvar aracı Kültür Koleksiyonu / Culture Collection (ugurlab/culture-collection) eklendi; hazırlık kutusu kaldırıldı. Araç ZIP içinde çevrimdışı çalışır, veri IndexedDB içinde tutulur; gruplar, kültürler, çoklu stok tüpleri, konumlar, arşiv ve JSON/CSV içerir. Tanıtım sayfaları ortak CSS ve iki dilde gerçek örnek veri görsellerini kullanır. Firebase ve moleküler modüller bu sürümde yoktur.
+
 - 2026-11-05 (2): Ana sayfa yalınlaştırıldı: başlık iki satır, açıklama paragrafı kaldırıldı, raflar başlığın hemen altında, araç kartına önizleme görseli. Görev Panosu ayrıntıları, büyük görsel ve sık sorulanlar `ugurlab/task-board` sayfasına taşındı.
 - 2026-11-05: Yeni tasarım (tezgâh paleti, Instrument Sans, gerçek ekran görüntülü giriş, Masa/Tezgâh rafları). Giriş görseli simetri için sayfa genişliğine sığdırıldı. Bu dosya eklendi.
