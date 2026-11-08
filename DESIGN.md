@@ -98,10 +98,17 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 - When a change affects two repositories, push the tool repository (images) first, then the catalogue.
 - Commit messages say briefly what changed and why.
 - Check before pushing: no horizontal scrolling at 390 px (phone), 1024 px (tablet) and 1440 px+ (desktop); links work.
-- **No** analytics, advertising or tracking code.
+- **No** analytics, advertising or tracking code, on the site or in the apps. The apps send nothing over the internet.
 
-## 11. Change log
+## 11. Licence
 
+- Everything is open source under the **MIT License**, copyright Ugur Comlekcioglu.
+- Every repository has a `LICENSE` file, and every tool ZIP contains `LICENSE.txt` plus a one-line copyright comment at the top of the app's HTML file.
+- Tool pages have a "Can I change it or build on it?" question and an MIT License link in the footer. Third-party code keeps its own licence notice (for example SortableJS, the Instrument Sans font).
+
+## 12. Change log
+
+- 2026-11-08 (2): MIT License added to all repositories and ZIPs, with an "Open source" item on the catalogue and a question on each tool page. "No tracking" now covers both the apps and the site. Culture Collection 1.2: a backup bar after every change replaces the six-month backup reminder.
 - 2026-11-08: Everything switched to **English only**: Turkish pages, screenshots and in-app language switches removed from all three repositories. Culture Collection 1.1: accent- and dotted-i-insensitive search, wider stock search, deleting cultures and vials, warning for an occupied position, six-month reminders for old vials and for backups, new screenshots taken at 1440 px.
 - 2026-11-07: First lab tool, Culture Collection (`ugurlab/culture-collection`), added to the Bench shelf; the placeholder box was removed. The tool runs offline from a ZIP, keeps data in IndexedDB and covers groups, cultures, multiple stock vials, locations, archive and JSON/CSV. No Firebase or molecular modules in this version.
 - 2026-11-05 (2): Catalogue simplified: two-line headline, no paragraph under it, shelves right below the headline, preview image on tool cards. Task Board details, large screenshot and questions moved to the `ugurlab/task-board` page.

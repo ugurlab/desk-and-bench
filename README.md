@@ -20,3 +20,6 @@ New app versions are maintained in the app repository.
 `task-board.html` is a notice for an old address and links to the Task Board page.
 
 Everything is in English only. No analytics or advertising scripts have been added.
+
+## Licence
+The site and all Desk & Bench tools are open source under the [MIT License](LICENSE). You are welcome to change and build on them, as long as you keep the copyright notice that credits the original author.
