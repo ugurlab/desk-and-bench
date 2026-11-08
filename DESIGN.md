@@ -100,6 +100,13 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 - Check before pushing: no horizontal scrolling at 390 px (phone), 1024 px (tablet) and 1440 px+ (desktop); links work.
 - **No** analytics, advertising or tracking code, on the site or in the apps. The apps send nothing over the internet.
 
+### Version releases
+
+- Starting with the next version after Culture Collection 1.3, publish a GitHub Release for each tool version, with a version tag, short change notes and the tested downloadable ZIP. Keep older releases available. Update the tool page and catalogue version to match.
+- Culture Collection: deleting a culture or vial moves it to a recoverable Trash. Restoring a culture restores its linked current vials; vials trashed separately remain in Trash. No automatic permanent deletion. Reserve codes while records are in Trash.
+- Culture Collection: the viability reminder interval is user-configurable (default six calendar months). Each vial can record its last viability check; calculate the next reminder from the later of its preparation date and last check. Include these dates, settings and Trash in JSON backups.
+- Read old backups through an explicit migration. Increase the backup schema version when older apps would discard new fields; document which app versions can restore the backup.
+
 ## 11. Licence
 
 - Everything is open source under the **MIT License**, copyright Ugur Comlekcioglu.
@@ -108,6 +115,8 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 - Tool pages have a "Can I change it or build on it?" question and an MIT License link in the footer. Third-party code keeps its own licence notice (for example SortableJS, the Instrument Sans font).
 
 ## 12. Change log
+
+- 2026-11-08 (3): Culture Collection 1.3 adds recoverable Trash for cultures and vials, a configurable 1–120-month viability reminder and last-check dates. JSON schema 2 preserves these fields and reads schema 1 backups. Future versions after 1.3 will use GitHub Releases.
 
 - 2026-11-08 (2): MIT License added to all repositories and ZIPs, with an "Open source" item on the catalogue and a question on each tool page. "No tracking" now covers both the apps and the site. Culture Collection 1.2: a backup bar after every change replaces the six-month backup reminder.
 - 2026-11-08: Everything switched to **English only**: Turkish pages, screenshots and in-app language switches removed from all three repositories. Culture Collection 1.1: accent- and dotted-i-insensitive search, wider stock search, deleting cultures and vials, warning for an occupied position, six-month reminders for old vials and for backups, new screenshots taken at 1440 px.
