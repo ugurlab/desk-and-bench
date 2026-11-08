@@ -21,5 +21,8 @@ New app versions are maintained in the app repository.
 
 Everything is in English only. No analytics or advertising scripts have been added.
 
+## Credits
+The site was built by Ugur Comlekcioglu with ChatGPT (OpenAI) and Claude (Anthropic).
+
 ## Licence
 The site and all Desk & Bench tools are open source under the [MIT License](LICENSE). You are welcome to change and build on them, as long as you keep the copyright notice that credits the original author.

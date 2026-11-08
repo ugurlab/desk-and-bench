@@ -104,6 +104,7 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 
 - Everything is open source under the **MIT License**, copyright Ugur Comlekcioglu.
 - Every repository has a `LICENSE` file, and every tool ZIP contains `LICENSE.txt` plus a one-line copyright comment at the top of the app's HTML file.
+- Each README has a **Credits** section and each page footer says which AI assistants helped build it (for example "Built with ChatGPT and Claude."). ChatGPT has no GitHub account, so it cannot appear in the Contributors list; the credit line is how it is acknowledged.
 - Tool pages have a "Can I change it or build on it?" question and an MIT License link in the footer. Third-party code keeps its own licence notice (for example SortableJS, the Instrument Sans font).
 
 ## 12. Change log
