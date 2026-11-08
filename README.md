@@ -1,24 +1,22 @@
 # Desk & Bench
-Simple tools for work and science. / Çalışma ve bilim için pratik araçlar.
 
-This repository contains the bilingual catalogue website, not application source code.
-Her uygulama ayrı depoda geliştirilir. Bu depo İngilizce/Türkçe araç kataloğudur.
+Simple tools for work and science.
+
+This repository contains the catalogue website, not application source code. Each tool is developed in its own repository.
 
 - Website: https://ugurlab.github.io/desk-and-bench/
-- Türkçe: https://ugurlab.github.io/desk-and-bench/tr.html
 
-**Before editing, read [DESIGN.md](DESIGN.md).** / **Düzenlemeden önce [DESIGN.md](DESIGN.md) dosyasını oku.**
+**Before editing, read [DESIGN.md](DESIGN.md).**
 
-## Applications / Uygulamalar
-| Tool | Use | Source and issues |
+## Tools
+| Tool | Page | Source and issues |
 | --- | --- | --- |
-| Task Board / Görev Panosu | https://ugurlab.github.io/task-board/ | https://github.com/ugurlab/task-board |
-| Culture Collection / Kültür Koleksiyonu | https://ugurlab.github.io/culture-collection/ | https://github.com/ugurlab/culture-collection |
+| Task Board | https://ugurlab.github.io/task-board/ | https://github.com/ugurlab/task-board |
+| Culture Collection | https://ugurlab.github.io/culture-collection/ | https://github.com/ugurlab/culture-collection |
 
 ## Adding a tool
-Create a separate repository, publish its Pages site, and add use/download links and a description to index.html and tr.html.
-New app versions are maintained in the app repository without changing this catalogue.
-task-board.html is a retired-address notice, with no automatic redirect. Task Board is distributed as a ZIP download.
+Create a separate repository, publish its Pages site and add the tool card to `index.html`. See section 9 of [DESIGN.md](DESIGN.md).
+New app versions are maintained in the app repository.
+`task-board.html` is a notice for an old address and links to the Task Board page.
 
-No analytics or advertising scripts have been added.
-
+Everything is in English only. No analytics or advertising scripts have been added.
