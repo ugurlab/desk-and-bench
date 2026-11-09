@@ -116,6 +116,8 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 
 ## 12. Change log
 
+- 2026-11-09 (2): ATLaS 0.2.2 corrects release labels in the app and README, removes unpublished/local-development wording, updates the tool page and catalogue download links, restores the catalogue download icon and uses ChatGPT-before-Claude credits. No calculation formulas changed.
+
 - 2026-11-09: Added ATLaS Solution Calculator 0.2.1 (preview) to the Bench shelf, in its own repository with an offline ZIP and GitHub Release. Covers solution preparation, concentration conversions, serial dilution and session-only history. Buffers remain a separate future tool. The tool page uses the shared stylesheet; the catalogue includes its preview, download and details links. Shelves now support multiple cards with natural card height and spacing, so a shorter shelf does not stretch one card to match several cards.
 
 - 2026-11-08 (3): Culture Collection 1.3 adds recoverable Trash for cultures and vials, a configurable 1–120-month viability reminder and last-check dates. JSON schema 2 preserves these fields and reads schema 1 backups. Future versions after 1.3 will use GitHub Releases.
