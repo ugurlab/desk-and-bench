@@ -116,6 +116,8 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 
 ## 12. Change log
 
+- 2026-11-09: Added ATLaS Solution Calculator 0.2.1 (preview) to the Bench shelf, in its own repository with an offline ZIP and GitHub Release. Covers solution preparation, concentration conversions, serial dilution and session-only history. Buffers remain a separate future tool. The tool page uses the shared stylesheet; the catalogue includes its preview, download and details links.
+
 - 2026-11-08 (3): Culture Collection 1.3 adds recoverable Trash for cultures and vials, a configurable 1–120-month viability reminder and last-check dates. JSON schema 2 preserves these fields and reads schema 1 backups. Future versions after 1.3 will use GitHub Releases.
 
 - 2026-11-08 (2): MIT License added to all repositories and ZIPs, with an "Open source" item on the catalogue and a question on each tool page. "No tracking" now covers both the apps and the site. Culture Collection 1.2: a backup bar after every change replaces the six-month backup reminder.

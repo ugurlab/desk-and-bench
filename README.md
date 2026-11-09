@@ -13,6 +13,7 @@ This repository contains the catalogue website, not application source code. Eac
 | --- | --- | --- |
 | Task Board | https://ugurlab.github.io/task-board/ | https://github.com/ugurlab/task-board |
 | Culture Collection | https://ugurlab.github.io/culture-collection/ | https://github.com/ugurlab/culture-collection |
+| ATLaS Solution Calculator | https://ugurlab.github.io/atlas-solution-calculator/ | https://github.com/ugurlab/atlas-solution-calculator |
 
 ## Adding a tool
 Create a separate repository, publish its Pages site and add the tool card to `index.html`. See section 9 of [DESIGN.md](DESIGN.md).
