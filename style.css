@@ -95,7 +95,9 @@ p{margin:0 0 1em}
 /* ---------- shelves ---------- */
 .shelves{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:2px solid var(--ink)}
 .shelf{padding:26px 0 0;display:flex;flex-direction:column}
-.shelf > .tool,.shelf > .slot{flex:1}
+.shelf > .tool{flex:0 0 auto}
+.shelf > .slot{flex:1}
+.shelf > .tool + .tool{margin-top:22px}
 .shelf + .shelf{border-left:1px solid var(--line);padding-left:clamp(20px,3vw,40px)}
 .shelf:first-child{padding-right:clamp(20px,3vw,40px)}
 .shelf-name{font-size:26px;font-weight:650;letter-spacing:-.02em;margin:0}
