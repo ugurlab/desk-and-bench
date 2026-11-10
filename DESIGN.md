@@ -110,7 +110,9 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 ## 11. Licence
 
 - Everything is open source under the **MIT License**, copyright Ugur Comlekcioglu.
-- Every repository has a `LICENSE` file, and every tool ZIP contains `LICENSE.txt` plus a one-line copyright comment at the top of the app's HTML file.
+- Every repository has a `LICENSE` file.
+- **Licence texts live inside the app's HTML file**, in one comment right after `<!doctype html>`: the tool name and version, the full MIT text for the app, and the full licence text of every third-party part bundled in the file (for example SortableJS, or the SIL Open Font License for an embedded font). The ZIP then needs no separate licence files; its README says where the texts are. HTML comments must not contain `--`.
+- Migration: Task Board 1.1.1 follows this rule. Culture Collection and ATLaS still ship `LICENSE.txt`/`FONT-LICENSE.txt` in the ZIP until they are moved one at a time.
 - Each README has a **Credits** section and each page footer says which AI assistants helped build it (for example "Built with ChatGPT and Claude."). ChatGPT has no GitHub account, so it cannot appear in the Contributors list; the credit line is how it is acknowledged.
 - Tool pages have a "Can I change it or build on it?" question and an MIT License link in the footer. Third-party code keeps its own licence notice (for example SortableJS, the Instrument Sans font).
 
@@ -122,6 +124,7 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 
 - 2026-11-08 (3): Culture Collection 1.3 adds recoverable Trash for cultures and vials, a configurable 1–120-month viability reminder and last-check dates. JSON schema 2 preserves these fields and reads schema 1 backups. Future versions after 1.3 will use GitHub Releases.
 
+- 2026-11-10: Licence texts moved into the HTML file (comment at the top) instead of separate files in the ZIP. Task Board 1.1.1 is the first tool converted; it now also carries the full SortableJS licence, which the ZIP previously lacked.
 - 2026-11-08 (2): MIT License added to all repositories and ZIPs, with an "Open source" item on the catalogue and a question on each tool page. "No tracking" now covers both the apps and the site. Culture Collection 1.2: a backup bar after every change replaces the six-month backup reminder.
 - 2026-11-08: Everything switched to **English only**: Turkish pages, screenshots and in-app language switches removed from all three repositories. Culture Collection 1.1: accent- and dotted-i-insensitive search, wider stock search, deleting cultures and vials, warning for an occupied position, six-month reminders for old vials and for backups, new screenshots taken at 1440 px.
 - 2026-11-07: First lab tool, Culture Collection (`ugurlab/culture-collection`), added to the Bench shelf; the placeholder box was removed. The tool runs offline from a ZIP, keeps data in IndexedDB and covers groups, cultures, multiple stock vials, locations, archive and JSON/CSV. No Firebase or molecular modules in this version.
