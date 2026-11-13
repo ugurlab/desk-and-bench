@@ -20,6 +20,17 @@ Keep the rules below unless Ugur explicitly asks otherwise.
 - **Everything is in English only:** the catalogue, the tool pages, the apps themselves, READMEs, commit messages and this file.
 - There is **no language switch** and no translated pages (`tr.html` or similar). Do not add one.
 - Users' own data may contain any language. Search in the apps must still work for non-English characters (for example, `izmir` finds `İzmir`).
+- **Exception: Study Goal Planner.** It is made for students, so the app itself has an English/Turkish switch (Ugur decided this on 2026-11-13). Its tool page, README, repository and commit messages stay in English. Do not add a language switch to any other tool unless Ugur asks.
+
+## 2a. App header
+
+- Every app shows **"Desk & Bench"** in small type above the app name in its own top bar, linking to the catalogue (`https://ugurlab.github.io/desk-and-bench/`). Study Goal Planner 1.0 is the first app with it; add it to the other apps when they are next updated.
+
+## 2b. Online use
+
+- Tools are normally downloaded as a ZIP. A tool that is meant for phones may also be published as a web app at `https://ugurlab.github.io/<tool>/app/`. Study Goal Planner does this, because a downloaded HTML file does not work reliably on phones.
+- The online app is the same single HTML file as the one in the ZIP. It still sends nothing over the internet: no fonts, scripts or analytics are loaded from other sites, and data stays in the browser.
+- Its catalogue card shows **"Open planner"** (or "Open <tool>") instead of "Download ZIP"; the ZIP stays on the tool page for offline use on a computer.
 
 ## 3. Files
 
@@ -118,6 +129,8 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 - Tool pages have a "Can I change it or build on it?" question and an MIT License link in the footer. Third-party code keeps its own licence notice (for example SortableJS, the Instrument Sans font).
 
 ## 12. Change log
+
+- 2026-11-13: Added Study Goal Planner 1.0 (`ugurlab/study-goal-planner`) to the Desk shelf: a card list of study goals, an eight-step editor with a printable one-page card, six example cards, backup and restore. New rules: the app is in English and Turkish (section 2), every app shows "Desk & Bench" above its name (2a), and a tool may also be used online at `/<tool>/app/` (2b). The "About these tools" text now says data stays in the browser on your own device.
 
 - 2026-11-10 (2): ATLaS 0.2.3 carries the MIT and SIL OFL texts in a comment at the top of its HTML file; the ZIP now holds only the HTML and README. The confusing "Reagent mass assay (% w/w)" field is now "Reagent purity (%)" with a bottle-label hint, and "Stock assay" is now "Stock concentration (% w/w)". Calculations are unchanged. New screenshot.
 - 2026-11-09 (2): ATLaS 0.2.2 corrects release labels in the app and README, removes unpublished/local-development wording, updates the tool page and catalogue download links, restores the catalogue download icon and uses ChatGPT-before-Claude credits. No calculation formulas changed.

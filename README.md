@@ -14,13 +14,14 @@ This repository contains the catalogue website, not application source code. Eac
 | Task Board | https://ugurlab.github.io/task-board/ | https://github.com/ugurlab/task-board |
 | Culture Collection | https://ugurlab.github.io/culture-collection/ | https://github.com/ugurlab/culture-collection |
 | ATLaS Solution Calculator | https://ugurlab.github.io/atlas-solution-calculator/ | https://github.com/ugurlab/atlas-solution-calculator |
+| Study Goal Planner | https://ugurlab.github.io/study-goal-planner/ | https://github.com/ugurlab/study-goal-planner |
 
 ## Adding a tool
 Create a separate repository, publish its Pages site and add the tool card to `index.html`. See section 9 of [DESIGN.md](DESIGN.md).
 New app versions are maintained in the app repository.
 `task-board.html` is a notice for an old address and links to the Task Board page.
 
-Everything is in English only. No analytics or advertising scripts have been added.
+Everything is in English only, except the Study Goal Planner app, which also has Turkish because it is made for students (see DESIGN.md). No analytics or advertising scripts have been added.
 
 ## Credits
 The site was built by Ugur Comlekcioglu with ChatGPT (OpenAI) and Claude (Anthropic).
