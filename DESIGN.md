@@ -124,11 +124,13 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 - Every repository has a `LICENSE` file.
 - **Licence texts live inside the app's HTML file**, in one comment right after `<!doctype html>`: the tool name and version, the full MIT text for the app, and the full licence text of every third-party part bundled in the file (for example SortableJS, or the SIL Open Font License for an embedded font). The ZIP then needs no separate licence files; its README says where the texts are. HTML comments must not contain `--`.
 - To keep a licence text that contains `--` (the SIL OFL does) inside a comment, the build turns its dashed rules into `=` rules and its spaced `--` into en dashes; the wording is not changed.
-- Migration: Task Board 1.1.1 and ATLaS 0.2.3 follow this rule. Culture Collection still ships its licence files in the ZIP until it is moved.
+- Migration: Task Board 1.1.1, ATLaS 0.2.3 and the Culture Collection 1.3 packaging update follow this rule. Culture Collection's ZIP contains only the HTML and README; its application behavior is unchanged.
 - Each README has a **Credits** section and each page footer says which AI assistants helped build it (for example "Built with ChatGPT and Claude."). ChatGPT has no GitHub account, so it cannot appear in the Contributors list; the credit line is how it is acknowledged.
 - Tool pages have a "Can I change it or build on it?" question and an MIT License link in the footer. Third-party code keeps its own licence notice (for example SortableJS, the Instrument Sans font).
 
 ## 12. Change log
+
+- 2026-11-14: Culture Collection 1.3 packaging update embeds the full MIT and Instrument Sans SIL OFL texts in a safe comment at the top of its HTML. Separate licence files are removed from the ZIP; instructions and the tool page are updated. The application body is unchanged.
 
 - 2026-11-13: Added Study Goal Planner 1.0 (`ugurlab/study-goal-planner`) to the Desk shelf: a card list of study goals, an eight-step editor with a printable one-page card, six example cards, backup and restore. New rules: the app is in English and Turkish (section 2), every app shows "Desk & Bench" above its name (2a), and a tool may also be used online at `/<tool>/app/` (2b). The "About these tools" text now says data stays in the browser on your own device.
 
