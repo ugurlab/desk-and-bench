@@ -128,7 +128,19 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 - Each README has a **Credits** section and each page footer says which AI assistants helped build it (for example "Built with ChatGPT and Claude."). ChatGPT has no GitHub account, so it cannot appear in the Contributors list; the credit line is how it is acknowledged.
 - Tool pages have a "Can I change it or build on it?" question and an MIT License link in the footer. Third-party code keeps its own licence notice (for example SortableJS, the Instrument Sans font).
 
+## 11a. Reading Room publications
+
+- Reading Room is a publication area inside this catalogue repository, not a separate tool application. Its landing page is `reading-room.html`; book files live under `reading-room/`.
+- Publication covers and visible author lines use **Desk&Bench**. Preserve the existing legal copyright notices in source comments.
+- Books are in English, open directly in the browser and need no download or account.
+- Each book has a standalone cover, clickable contents, separate chapter covers and varied chapter-specific activities.
+- The reader may use quiet chapter colours, local system sans-serif typography and page-turn animations triggered by navigation. Honour reduced motion; provide a continuous full-text mode. These are publication-specific exceptions to the catalogue palette and typography rules. No external runtime fonts, scripts or tracking are added to the reader.
+- Reading Room is added between the tool shelves and About, with a navigation link. Catalogue and landing pages retain the shared stylesheet; publication-only styles are isolated in their own files.
+- Activity notes are stored locally when available. Storage failures must be visible. The book is educational; do not reproduce diagnostic scores or unsupported medical claims.
+
 ## 12. Change log
+
+- 2026-11-15: Added Reading Room and the English Desk&Bench publication Small Steps, Meaningful Progress, with ten chapters, turning pages, full-text reading and local activity notes.
 
 - 2026-11-14: Culture Collection 1.3 packaging update embeds the full MIT and Instrument Sans SIL OFL texts in a safe comment at the top of its HTML. Separate licence files are removed from the ZIP; instructions and the tool page are updated. The application body is unchanged.
 
