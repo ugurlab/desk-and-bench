@@ -140,6 +140,8 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 
 ## 12. Change log
 
+- 2026-11-18: Task Board 1.2.0 opens a clicked strip at the far left and folds the rightmost open section when the available open-section capacity is full. Other open sections keep their order. Added the catalogue link above the app title, updated screenshots and published a versioned Release ZIP. Task storage and backup compatibility are preserved.
+
 - 2026-11-15: Added Reading Room and the English Desk&Bench publication Small Steps, Meaningful Progress, with ten chapters, turning pages, full-text reading and local activity notes.
 
 - 2026-11-14: Culture Collection 1.3 packaging update embeds the full MIT and Instrument Sans SIL OFL texts in a safe comment at the top of its HTML. Separate licence files are removed from the ZIP; instructions and the tool page are updated. The application body is unchanged.
