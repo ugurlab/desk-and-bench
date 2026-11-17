@@ -15,6 +15,7 @@ This repository contains the catalogue website, not application source code. Eac
 | Culture Collection | https://ugurlab.github.io/culture-collection/ | https://github.com/ugurlab/culture-collection |
 | ATLaS Solution Calculator | https://ugurlab.github.io/atlas-solution-calculator/ | https://github.com/ugurlab/atlas-solution-calculator |
 | Study Goal Planner | https://ugurlab.github.io/study-goal-planner/ | https://github.com/ugurlab/study-goal-planner |
+| Protocol Notebook | https://ugurlab.github.io/protocol-notebook/ | https://github.com/ugurlab/protocol-notebook |
 
 ## Adding a tool
 Create a separate repository, publish its Pages site and add the tool card to `index.html`. See section 9 of [DESIGN.md](DESIGN.md).
@@ -35,3 +36,5 @@ The site and all Desk & Bench tools are open source under the [MIT License](LICE
 - [Small Steps, Meaningful Progress](https://ugurlab.github.io/desk-and-bench/reading-room/small-steps.html): a condensed English adaptation of the ten themes in How to Improve Yourself?; 45 numbered pages and a cover, chapter navigation, page turns, full-text view and local activity notes.
 - Reader files: `reading-room/small-steps.html`, `reader.css`, `reader.js` and `book-data.js`. No build step or external runtime dependencies.
 - Visible publication credit is Desk&Bench. The original software copyright notice remains in the HTML source comment. Built with ChatGPT.
+
+
