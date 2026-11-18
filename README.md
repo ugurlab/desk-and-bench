@@ -29,12 +29,12 @@ The site was built by Ugur Comlekcioglu with ChatGPT (OpenAI) and Claude (Anthro
 
 ## Licence
 The site and all Desk & Bench tools are open source under the [MIT License](LICENSE). You are welcome to change and build on them, as long as you keep the copyright notice that credits the original author.
-## Reading Room
+## Study Hall
 
-[Reading Room](https://ugurlab.github.io/desk-and-bench/reading-room.html) hosts Desk&Bench publications in this repository.
+[Study Hall](https://ugurlab.github.io/desk-and-bench/study-hall.html) collects tools for students: Study Goal Planner (its own repository) and the Desk&Bench publications hosted in this repository.
 
-- [Small Steps, Meaningful Progress](https://ugurlab.github.io/desk-and-bench/reading-room/small-steps.html): a condensed English adaptation of the ten themes in How to Improve Yourself?; 45 numbered pages and a cover, chapter navigation, page turns, full-text view and local activity notes.
-- Reader files: `reading-room/small-steps.html`, `reader.css`, `reader.js` and `book-data.js`. No build step or external runtime dependencies.
+- [Small Steps, Meaningful Progress](https://ugurlab.github.io/desk-and-bench/study-hall/small-steps.html): a condensed English adaptation of the ten themes in How to Improve Yourself?; 45 numbered pages and a cover, chapter navigation, page turns, full-text view and local activity notes.
+- Reader files: `study-hall/small-steps.html`, `reader.css`, `reader.js` and `book-data.js`. No build step or external runtime dependencies.
 - Visible publication credit is Desk&Bench. The original software copyright notice remains in the HTML source comment. Built with ChatGPT.
 
 

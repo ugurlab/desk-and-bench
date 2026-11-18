@@ -10,7 +10,7 @@ Keep the rules below unless Ugur explicitly asks otherwise.
 ## 1. Purpose
 
 - A **catalogue** of small tools that Ugur Comlekcioglu builds for his own work.
-- Two shelves: **Desk** (productivity, everyday work) and **Bench** (laboratory tools).
+- Two shelves: **Desk** (productivity, everyday work) and **Bench** (laboratory tools), followed by **Study Hall** (tools for students, see section 11a).
 - Each tool is developed **in its own repository** (for example `ugurlab/task-board`). This repository is only the catalogue; no application code goes here.
 - Each tool has **its own page** in its own repository (`ugurlab/<tool>/index.html`) and uses this repository's stylesheet: `<link rel="stylesheet" href="/desk-and-bench/style.css">`, so every page shares one design.
 - Address: https://ugurlab.github.io/desk-and-bench/
@@ -98,7 +98,7 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 
 1. Publish the tool in its own repository (`ugurlab/<tool-name>`) with GitHub Pages and a ZIP download.
 2. Build its `index.html` page in that repository, using the Task Board page as the model and the shared `style.css`.
-3. In the catalogue `index.html`, add an `<article class="tool">` to the right shelf (Desk or Bench): preview image, name, version, one or two sentences, "Download ZIP" and "Details" buttons.
+3. In the catalogue `index.html`, add an `<article class="tool">` to the right place (Desk, Bench, or Study Hall for tools made for students): preview image, name, version, one or two sentences, "Download ZIP" and "Details" buttons.
 4. Update the tool table in the README.
 
 ## 10. Working together (several assistants)
@@ -128,17 +128,21 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 - Each README has a **Credits** section and each page footer says which AI assistants helped build it (for example "Built with ChatGPT and Claude."). ChatGPT has no GitHub account, so it cannot appear in the Contributors list; the credit line is how it is acknowledged.
 - Tool pages have a "Can I change it or build on it?" question and an MIT License link in the footer. Third-party code keeps its own licence notice (for example SortableJS, the Instrument Sans font).
 
-## 11a. Reading Room publications
+## 11a. Study Hall
 
-- Reading Room is a publication area inside this catalogue repository, not a separate tool application. Its landing page is `reading-room.html`; book files live under `reading-room/`.
+- Study Hall (formerly Reading Room) collects everything made for students: tools and books together, without sub-sections. Its subtitle is "Tools for students". Study Goal Planner moved here from the Desk shelf on 2026-11-19.
+- Student tools keep their own repositories (section 9). Books are publications inside this catalogue repository, not separate tool applications. The landing page is `study-hall.html`; book files live under `study-hall/`.
+- On the catalogue and the landing page, each item is a card in `.hall-grid`. A book card uses a cover-style thumbnail and shows "Book" in place of a version.
 - Publication covers and visible author lines use **Desk&Bench**. Preserve the existing legal copyright notices in source comments.
 - Books are in English, open directly in the browser and need no download or account.
 - Each book has a standalone cover, clickable contents, separate chapter covers and varied chapter-specific activities.
 - The reader may use quiet chapter colours, local system sans-serif typography and page-turn animations triggered by navigation. Honour reduced motion; provide a continuous full-text mode. These are publication-specific exceptions to the catalogue palette and typography rules. No external runtime fonts, scripts or tracking are added to the reader.
-- Reading Room is added between the tool shelves and About, with a navigation link. Catalogue and landing pages retain the shared stylesheet; publication-only styles are isolated in their own files.
+- Study Hall sits between the tool shelves and About, with a navigation link. Catalogue and landing pages retain the shared stylesheet; publication-only styles are isolated in their own files.
 - Activity notes are stored locally when available. Storage failures must be visible. The book is educational; do not reproduce diagnostic scores or unsupported medical claims.
 
 ## 12. Change log
+
+- 2026-11-19: Renamed Reading Room to Study Hall, subtitled "Tools for students", and moved Study Goal Planner there from the Desk shelf, beside the book. Pages and files moved from `reading-room*` to `study-hall*`; no redirect, as the old address had not been shared.
 
 - 2026-11-18: Task Board 1.2.1 removes the This week and Streak counters from the header. Updated the tested offline ZIP, screenshots and download links; task completion, backup compatibility and the other board features are preserved.
 
