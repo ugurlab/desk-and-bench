@@ -142,6 +142,8 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 
 ## 12. Change log
 
+- 2026-11-19 (2): Added Enzyme Simulation Lab 1.0 (`ugurlab/enzyme-simulation-lab`) to Study Hall: kinetics lab, pH and temperature, a five-step lysozyme close-up in 3D, lactose challenge and acarbose. Used online at `/enzyme-simulation-lab/app/` with a ZIP for offline use; the 3D viewer (3Dmol.js) and structure data are bundled in the HTML file with their licence texts.
+
 - 2026-11-19: Renamed Reading Room to Study Hall, subtitled "Tools for students", and moved Study Goal Planner there from the Desk shelf, beside the book. Pages and files moved from `reading-room*` to `study-hall*`; no redirect, as the old address had not been shared.
 
 - 2026-11-18: Task Board 1.2.1 removes the This week and Streak counters from the header. Updated the tested offline ZIP, screenshots and download links; task completion, backup compatibility and the other board features are preserved.
