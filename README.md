@@ -16,6 +16,7 @@ This repository contains the catalogue website, not application source code. Eac
 | ATLaS Solution Calculator | https://ugurlab.github.io/atlas-solution-calculator/ | https://github.com/ugurlab/atlas-solution-calculator |
 | Study Goal Planner | https://ugurlab.github.io/study-goal-planner/ | https://github.com/ugurlab/study-goal-planner |
 | Protocol Notebook | https://ugurlab.github.io/protocol-notebook/ | https://github.com/ugurlab/protocol-notebook |
+| Enzyme Simulation Lab | https://ugurlab.github.io/enzyme-simulation-lab/ | https://github.com/ugurlab/enzyme-simulation-lab |
 
 ## Adding a tool
 Create a separate repository, publish its Pages site and add the tool card to `index.html`. See section 9 of [DESIGN.md](DESIGN.md).
@@ -31,7 +32,7 @@ The site was built by Ugur Comlekcioglu with ChatGPT (OpenAI) and Claude (Anthro
 The site and all Desk & Bench tools are open source under the [MIT License](LICENSE). You are welcome to change and build on them, as long as you keep the copyright notice that credits the original author.
 ## Study Hall
 
-[Study Hall](https://ugurlab.github.io/desk-and-bench/study-hall.html) collects tools for students: Study Goal Planner (its own repository) and the Desk&Bench publications hosted in this repository.
+[Study Hall](https://ugurlab.github.io/desk-and-bench/study-hall.html) collects tools for students: Study Goal Planner and Enzyme Simulation Lab (each in its own repository) and the Desk&Bench publications hosted in this repository.
 
 - [Small Steps, Meaningful Progress](https://ugurlab.github.io/desk-and-bench/study-hall/small-steps.html): a condensed English adaptation of the ten themes in How to Improve Yourself?; 45 numbered pages and a cover, chapter navigation, page turns, full-text view and local activity notes.
 - Reader files: `study-hall/small-steps.html`, `reader.css`, `reader.js` and `book-data.js`. No build step or external runtime dependencies.
