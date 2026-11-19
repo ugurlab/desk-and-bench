@@ -25,6 +25,7 @@ Keep the rules below unless Ugur explicitly asks otherwise.
 ## 2a. App header
 
 - Every app shows **"Desk & Bench"** in small type above the app name in its own top bar, linking to the catalogue (`https://ugurlab.github.io/desk-and-bench/`). Study Goal Planner 1.0 is the first app with it; add it to the other apps when they are next updated.
+- Every app ends with a small grey signature line at the foot of the page: **"Made by ugurlab · Desk & Bench"**, where "ugurlab" links to `https://github.com/ugurlab` and "Desk & Bench" to the catalogue. The author's name does not appear on screen (it stays in the licence comment, as the MIT License requires), and no AI tool is named inside an app. Enzyme Simulation Lab 1.1 is the first app with it; add it to the other apps when they are next updated.
 
 ## 2b. Online use
 
@@ -141,6 +142,8 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 - Activity notes are stored locally when available. Storage failures must be visible. The book is educational; do not reproduce diagnostic scores or unsupported medical claims.
 
 ## 12. Change log
+
+- 2026-11-19 (3): About text now reads "Desk & Bench is made by ugurlab…", linking to the GitHub profile, instead of opening with the author's name. New app rule in section 2a: a "Made by ugurlab · Desk & Bench" signature at the foot of every app. Enzyme Simulation Lab updated to 1.1 (Lysozyme close-up removed, pH & Temperature rebuilt around four enzymes); its card uses the new pH screenshot.
 
 - 2026-11-19 (2): Added Enzyme Simulation Lab 1.0 (`ugurlab/enzyme-simulation-lab`) to Study Hall: kinetics lab, pH and temperature, a five-step lysozyme close-up in 3D, lactose challenge and acarbose. Used online at `/enzyme-simulation-lab/app/` with a ZIP for offline use; the 3D viewer (3Dmol.js) and structure data are bundled in the HTML file with their licence texts.
 
