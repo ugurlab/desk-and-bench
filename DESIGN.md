@@ -143,6 +143,8 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 
 ## 12. Change log
 
+- 2026-11-21: Task Board 1.3.0 adds Ongoing and Projects tabs, each with up to 10 sections. Daily focus and overdue tasks span both workspaces. Sections can move between workspaces and restore from Archive to their original workspace. Old tasks/backups open in Projects. Added the app signature, updated sample screenshots and released the offline ZIP.
+
 - 2026-11-19 (3): About text now reads "Desk & Bench is made by ugurlab…", linking to the GitHub profile, instead of opening with the author's name. New app rule in section 2a: a "Made by ugurlab · Desk & Bench" signature at the foot of every app. Enzyme Simulation Lab updated to 1.1 (Lysozyme close-up removed, pH & Temperature rebuilt around four enzymes); its card uses the new pH screenshot.
 
 - 2026-11-19 (2): Added Enzyme Simulation Lab 1.0 (`ugurlab/enzyme-simulation-lab`) to Study Hall: kinetics lab, pH and temperature, a five-step lysozyme close-up in 3D, lactose challenge and acarbose. Used online at `/enzyme-simulation-lab/app/` with a ZIP for offline use; the 3D viewer (3Dmol.js) and structure data are bundled in the HTML file with their licence texts.
