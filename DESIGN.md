@@ -143,6 +143,8 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 
 ## 12. Change log
 
+- 2026-11-22: Added Drug Targets 3D 1.0 (`ugurlab/drug-targets-3d`) to Study Hall: everyday drugs and their target proteins in 3D for undergraduates, starting with ibuprofen and cyclooxygenase (PDB 1EQG, substrate from 1DIY). Bind the drug, zoom to the pocket, and a substrate test with and without the drug. Used online at `/drug-targets-3d/app/` with a ZIP for offline use; 3Dmol.js and the structure data are bundled in the HTML file with their licence texts.
+
 - 2026-11-21: Task Board 1.3.0 adds Ongoing and Projects tabs, each with up to 10 sections. Daily focus and overdue tasks span both workspaces. Sections can move between workspaces and restore from Archive to their original workspace. Old tasks/backups open in Projects. Added the app signature, updated sample screenshots and released the offline ZIP.
 
 - 2026-11-19 (3): About text now reads "Desk & Bench is made by ugurlab…", linking to the GitHub profile, instead of opening with the author's name. New app rule in section 2a: a "Made by ugurlab · Desk & Bench" signature at the foot of every app. Enzyme Simulation Lab updated to 1.1 (Lysozyme close-up removed, pH & Temperature rebuilt around four enzymes); its card uses the new pH screenshot.
