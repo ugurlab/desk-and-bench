@@ -110,7 +110,7 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 - When a change affects two repositories, push the tool repository (images) first, then the catalogue.
 - Commit messages say briefly what changed and why.
 - Check before pushing: no horizontal scrolling at 390 px (phone), 1024 px (tablet) and 1440 px+ (desktop); links work.
-- **No** analytics, advertising or tracking code, on the site or in the apps. The apps send nothing over the internet.
+- **No** analytics, advertising or tracking code, on the site or in the apps. PaperNotes is an exception for user-initiated DOI lookup, which sends the DOI to public metadata services. App records stay in the browser.
 
 ### Version releases
 
@@ -142,6 +142,8 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 - Activity notes are stored locally when available. Storage failures must be visible. The book is educational; do not reproduce diagnostic scores or unsupported medical claims.
 
 ## 12. Change log
+
+- 2026-11-23: Added PaperNotes 1.0.0 to Desk. Its archive stays in the browser. Manual entry works offline, and the optional DOI lookup sends only the DOI to public metadata services.
 
 - 2026-11-22: Added Drug Targets 3D 1.0 (`ugurlab/drug-targets-3d`) to Study Hall: everyday drugs and their target proteins in 3D for undergraduates, starting with ibuprofen and cyclooxygenase (PDB 1EQG, substrate from 1DIY). Bind the drug, zoom to the pocket, and a substrate test with and without the drug. Used online at `/drug-targets-3d/app/` with a ZIP for offline use; 3Dmol.js and the structure data are bundled in the HTML file with their licence texts.
 
