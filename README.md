@@ -12,6 +12,7 @@ This repository contains the catalogue website, not application source code. Eac
 | Tool | Page | Source and issues |
 | --- | --- | --- |
 | Task Board | https://ugurlab.github.io/task-board/ | https://github.com/ugurlab/task-board |
+| PaperNotes | https://ugurlab.github.io/papernotes/ | https://github.com/ugurlab/papernotes |
 | Culture Collection | https://ugurlab.github.io/culture-collection/ | https://github.com/ugurlab/culture-collection |
 | ATLaS Solution Calculator | https://ugurlab.github.io/atlas-solution-calculator/ | https://github.com/ugurlab/atlas-solution-calculator |
 | Study Goal Planner | https://ugurlab.github.io/study-goal-planner/ | https://github.com/ugurlab/study-goal-planner |
