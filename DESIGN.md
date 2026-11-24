@@ -143,6 +143,8 @@ Use the `:root` variables in `style.css`; do not write colours directly into HTM
 
 ## 12. Change log
 
+- 2026-11-24: Task Board 1.3.1 groups open tasks above completed tasks in each section, preserving order within each group. Existing offline data and backups remain compatible.
+
 - 2026-11-23: Added PaperNotes 1.0.0 to Desk. Its archive stays in the browser. Manual entry works offline, and the optional DOI lookup sends only the DOI to public metadata services.
 
 - 2026-11-22: Added Drug Targets 3D 1.0 (`ugurlab/drug-targets-3d`) to Study Hall: everyday drugs and their target proteins in 3D for undergraduates, starting with ibuprofen and cyclooxygenase (PDB 1EQG, substrate from 1DIY). Bind the drug, zoom to the pocket, and a substrate test with and without the drug. Used online at `/drug-targets-3d/app/` with a ZIP for offline use; 3Dmol.js and the structure data are bundled in the HTML file with their licence texts.
